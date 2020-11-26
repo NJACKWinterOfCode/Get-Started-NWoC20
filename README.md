@@ -60,7 +60,7 @@ You should see the branch name change on the terminal prompt. Congratulations! Y
 
 ## Editing files
 
-Create a new text file in the [contributors](contributors/) folder with your github handle as the file name. This file should contain your name. A sample file [atm1504.txt](https://github.com/NJACKWinterOfCode/Get-Started/blob/master/contributors/atm1504.txt) has been provided.
+Create a new text file in the [contributors](contributors/) folder with your github handle as the file name. This file should contain your name. A sample file [s-ayush2903.txt](https://github.com/NJACKWinterOfCode/Get-Started-NWoC20/blob/main/contributors/s-ayush2903.txt) has been provided.
 
 ## Adding and commiting changes
 
