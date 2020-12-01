@@ -14,7 +14,7 @@
 
 # Getting Started
 
-### ***All the projects selected for NJACK Winter of Code 2020 are listed [here](https://github.com/NJACKWinterOfCode).***
+### ***All the projects selected for NJACK Winter of Code 2020 are listed [here](https://njackwinterofcode.github.io/projects.html).***
 
 This repo is to help newbies get started with Open Source. The objective of this tutorial is to make your first Pull Request and add your name to the [contributors](contributors/) folder. If you get stuck, ask your doubt on the [NWoC Gitter Channel](https://gitter.im/NJACKWinterOfCode/NWoC2020).
 
