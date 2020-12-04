@@ -8,6 +8,7 @@
   1. [Editing files](#editing-files)
   1. [Adding and commiting changes](#adding-and-commiting-changes)
   1. [Pushing changes and submitting a Pull Request](#pushing-changes-and-submitting-a-pull-request)
+  1. [Resoliving Merge Conflicts](#resoliving-merge-conflicts)
 - [Resources](#resources)
 - [Rules and Scoring System](#rules-and-scoring-system)
 - [FAQ](#faq)
