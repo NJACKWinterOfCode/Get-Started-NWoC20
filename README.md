@@ -1,13 +1,13 @@
 # Table of Contents
 
 - [Getting Started](#getting-started)
-    - [Setting up softwares](#setting-up-softwares)
-    - [Setting up git](#setting-up-git)
-    - [Forking and Cloning](#forking-and-cloning)
-    - [Making branches](#making-branches)
-    - [Editing files](#editing-files)
-    - [Adding and commiting changes](#adding-and-commiting-changes)
-    - [Pushing changes and submitting a Pull Request](#pushing-changes-and-submitting-a-pull-request)
+  1. [Setting up softwares](#setting-up-softwares)
+  1. [Setting up git](#setting-up-git)
+  1. [Forking and Cloning](#forking-and-cloning)
+  1. [Making branches](#making-branches)
+  1. [Editing files](#editing-files)
+  1. [Adding and commiting changes](#adding-and-commiting-changes)
+  1. [Pushing changes and submitting a Pull Request](#pushing-changes-and-submitting-a-pull-request)
 - [Resources](#resources)
 - [Rules and Scoring System](#rules-and-scoring-system)
 - [FAQ](#faq)
@@ -39,24 +39,29 @@ That should complete the software setup.
 
 ## Forking and Cloning
 
-Before you can edit any file on the repo, you must fork and clone it. A **fork** is a copy of the repository in your account. To **clone** a repo means to download it locally. Click the Fork button on the top right of this repo to fork it. Next, go to your copy of the repo and click the Clone button. Copy the url. Now open git and execute this command:
+Before you can edit any file on the repo, you must fork and clone it. A **fork** is a copy of the repository in your account. To **clone** a repo means to download it locally. Click the Fork button on the top right of this repo to fork it.
+
+![fork image](https://help.github.com/assets/images/help/repository/fork_button.jpg)
+
+Next, go to your copy of the repo and click the Clone button. Copy the url. Now open git and execute this command:
+
+![code ui](https://docs.github.com/assets/images/help/repository/code-button.png)
 
 ```
 git clone [copied url here]
 ```
 
-That should download the repo locally.
+That should download the repo locally. Learn more about [forking](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) and [cloning a repo](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
 
 ## Making branches
 
-A **branch** is a parallel copy of the code. When we add new features to a project, we usually create a copy of the code and work on it. This is done so that the main working copy of the code is unaffected. In most GitHub repos, the master branch is the default branch. You should create a separate branch for every contribution you make. To create a new branch, execute this command:
+A **branch** is a parallel copy of the code. When we add new features to a project, we usually create a copy of the code and work on it. This is done so that the main working copy of the code is unaffected. In most GitHub repos, the master branch is the default branch. You should **create a separate branch for every contribution you make**. To create a new branch, execute this command:
 
 ```
 git checkout -b [branch name here]
 ```
 
 You should see the branch name change on the terminal prompt. Congratulations! You created a new branch.
-
 
 ## Editing files
 
@@ -76,7 +81,7 @@ This adds all files to the upcoming commit. Now, to create the commit run this c
 git commit -m "[commit message here]"
 ```
 
-Write any message in place of the commit message. If the command runs successfully, you should have committed your changes.
+Write any message in place of the commit message. If the command runs successfully, you should have committed your changes. [Write a good commit message](https://chris.beams.io/posts/git-commit/), if possible.
 
 ## Pushing changes and submitting a Pull Request
 
@@ -86,7 +91,22 @@ After committing your changes, you have to upload them to GitHub. This is known 
 git push origin [branch name]
 ```
 
-Where branch name is the name of your newly created branch. This should upload your changes to *your* GitHub account. Now, you can propose these changes to the actual project. To do so, click on the **Pull Request** button on GitHub. Most of the fields should be automatically filled out for you. Click Create Pull Request. If everything went correctly, you should have created a pull request with your changes. Now it is upto the repo owner to **merge** these changes.
+Where branch name is the name of your newly created branch. This should upload your changes to *your* GitHub account.
+
+![pull request image](https://help.github.com/assets/images/help/pull_requests/choose-base-and-compare-branches.png)
+
+Now, you can propose these changes to the actual project. To do so, click on the **Pull Request** button on GitHub. Most of the fields should be automatically filled out for you. Click Create Pull Request. If everything went correctly, you should have created a pull request with your changes. Now it is upto the repo owner to **merge** these changes.
+
+## Resoliving Merge Conflicts
+
+- [Keep your fork in sync](https://www.freecodecamp.org/news/how-to-sync-your-fork-with-the-original-git-repository/) to avoid merge conflicts:
+  ```bash
+  git remote add upstream <original-repo-link.git>
+  git fetch upstream
+  git pull upstream master
+  git push
+  ```
+- If you run into a **merge conflict**, you have to resolve the conflict. There are a lot of guides online, or you can try this one by [opensource.com](https://opensource.com/article/20/4/git-merge-conflict).
 
 Congratulations! You made your first Open Source Contribution! Now contribute to some other repos on NWoC. Have a great time!
 
@@ -107,25 +127,21 @@ You can learn more about Git and GitHub here:
 - In case of equal scores, the one who has solved more number of difficult issues will be given priority.
 - In case of any disputes/discrepancies, the final decision shall be taken by the mentors of the respective projects.
 
-
 **Some other important points:**
 
 - Any contributions made prior to the beginning of the coding period (1st December) will NOT be counted towards the final score.
 - Students should NOT review other student’s Pull Requests under any circumstances. Let the mentors alone review the Pull Requests.
 - Please try to Google your doubts before directly contacting mentors or posting on the Gitter channel itself.
 
-
 # FAQ
 
-1. **I have exams till mid-December. What to do? Can I still participate?**  
-Yes, definitely! You can register anytime during the entire duration of the program and start contributing to the various projects. It is never late to contribute to the projects :-)
+1. **I have exams till mid-December. What to do? Can I still participate?**
+   Yes, definitely! You can register anytime during the entire duration of the program and start contributing to the various projects. It is never late to contribute to the projects :-)
+2. **What prizes shall I receive?**
+   Apart from a digital certificate from NJACK IIT Patna, whatever merchandise and some swags we obtain from the sponsors, would be distributed among the active contributors.
 
-1. **What prizes shall I receive?**  
-Apart from a digital certificate from NJACK IIT Patna, whatever merchandise and some swags we obtain from the sponsors, would be distributed among the active contributors. 
+   **Letter of Recommendation (LoRs) from NJACK, IIT Patna can be provided to the top and active contributors on review of their work.**
 
-    **Letter of Recommendation (LoRs) from NJACK, IIT Patna can be provided to the top and active contributors on review of their work.**
-
-    However, we would like to emphasise on the fact that this is more of a program to encourage Open Source, rather than a contest. So, your aim should be to learn along with the community and enjoy working on the projects, rather than to compete to get to the top. Cheers :-)
-
-1. **Which language should I know to participate in NWoC?**  
-We will try to include projects in almost all common programming languages. However, you will have to work with Git and GitHub to contribute to any of the projects. You can learn to use these during NWoC itself, or you can start learning them from https://classroom.udacity.com/courses/ud775.
+   However, we would like to emphasise on the fact that this is more of a program to encourage Open Source, rather than a contest. So, your aim should be to learn along with the community and enjoy working on the projects, rather than to compete to get to the top. Cheers :-)
+3. **Which language should I know to participate in NWoC?**
+   We will try to include projects in almost all common programming languages. However, you will have to work with Git and GitHub to contribute to any of the projects. You can learn to use these during NWoC itself, or you can start learning them from https://classroom.udacity.com/courses/ud775.
